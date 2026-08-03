@@ -175,7 +175,7 @@ previous versions too.
   [Apple Developer](https://developer.apple.com/download/all).
 - Install the SSH keys.
 - `git clone git@github.com:simousopas/hosts-setup` and  run
-  `./macos/<hostname>bootstrap.sh`.  Manual password input will be required a
+  `./macos/<hostname>/bootstrap.sh`.  Manual password input will be required a
   couple of times during the process.
 - Add _Developer Tools_ permission to _Ghostty_.
 - Import the `tokyo-night` profile for Apple Terminal and set it as the default.
