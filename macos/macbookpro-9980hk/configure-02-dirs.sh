@@ -20,7 +20,7 @@ run mkdir -p "$HOME"/Library/Application\ Support/Code/User
 run mkdir -p "$HOME"/Library/Application\ Support/com.nuebling.mac-mouse-fix
 run mkdir -p "$HOME"/Library/Application\ Support/obs-studio/basic
 run mkdir -p "$XDG_CACHE_HOME"/code/{data/User,extensions}
-run mkdir -p "$XDG_CACHE_HOME"/lima
+run mkdir -p "$XDG_CACHE_HOME"/{lima,npm}
 run mkdir -p "$XDG_CONFIG_HOME"/{bat/themes,fd,fish/completions}
 run mkdir -p "$XDG_CONFIG_HOME"/{ghostty,git,lf,lima}
 run mkdir -p "$XDG_CONFIG_HOME"/{mise,nvim,pip,rg,zed}
