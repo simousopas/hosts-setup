@@ -6,7 +6,7 @@ set -Eeuo pipefail
 
 readonly SCRIPT_DIR="$(cd "$(dirname -- "${BASH_SOURCE[0]}")" >/dev/null && pwd)"
 readonly ROOT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
-readonly CONFIGURE_SCRIPTS=(
+readonly SETUP_SCRIPTS=(
 	"$SCRIPT_DIR"/configure.sh
 	"$SCRIPT_DIR"/bootstrap-01-defaults.sh
 	"$SCRIPT_DIR"/bootstrap-02-brew.sh
@@ -53,7 +53,7 @@ validate_xcode_clt () {
 validate_xcode_clt
 validate_host
 parse_input_args "$@"
-for SCRIPT in "${CONFIGURE_SCRIPTS[@]}"; do
+for SCRIPT in "${SETUP_SCRIPTS[@]}"; do
 	logi "Starting ${SCRIPT##*/} ..."
 	/bin/bash "$SCRIPT"
 	echo ""
