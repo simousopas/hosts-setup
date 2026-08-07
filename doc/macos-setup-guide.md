@@ -197,9 +197,9 @@ previous versions too.
   Notifications.
 - Press `Cmd+Shift+5`, pick _Options_ and set `~/Documents/Captures` as the
   storage location.
-- Setup ProtonMail, GitHub, YouTube, ChatGPT, Claude, Gemini, Fastmail, WhatsApp
-  and Brave Talk on Safari.
-- Setup GitHub, YouTube and Brave Talk on Brave.
+- Setup ProtonMail, GitHub, ChatGPT, WhatsApp, YouTube, Fastmail, and Brave Talk
+  on Safari.
+- Setup GitHub, ChatGPT, YouTube and Brave Talk on Brave.
 - [Disable SIP](https://developer.apple.com/documentation/security/disabling-and-enabling-system-integrity-protection).
 - Disable macOS services: `bash etc/macos/scripts/disable-services.sh`
 - Open _Ghostty_ and run `purge all`
