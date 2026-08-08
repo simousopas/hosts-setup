@@ -6,11 +6,12 @@
 
 ## OBS
 - Output resolution to ABR:
-  - 2408x1506: 2500 to 4000 Kbps
-  - 2880x1800: 3350 to 5680 Kbps
-  - 3072x1920: 3785 to 6418 Kbps
-  - 3456x2234: 4920 to 8343 Kbps
-  - 3840x2160: 9317 to 14767 Kbps
+  - 2408x1506: 2500 to 4000  Kbps
+  - 2880x1800: 3350 to 5680  Kbps
+  - 3072x1920: 3785 to 6418  Kbps
+  - 3456x2234: 4920 to 8343  Kbps
+  - 3840x2160: 5059 to 8578  Kbps
+  - 5120x2880: 8993 to 15249 Kbps
 
 ## SSH
 - Generate new keys
