@@ -18,10 +18,10 @@ applicable to previous versions too.
 ## Updates
 - Update dotfiles `./macos/<hostname>/configure.sh`
 - Update hosts `./macos/<hostname>/bootstrap-03-hosts.sh`
-- Update iSMC `bash etc/macos/scripts/install-ismc.sh [--version <ver>]`
+- Update iSMC `./macos/<hostname>/bootstrap-04-ismc.sh`
 - Update MongoDB Shell/Tools
   `bash etc/scripts/install-mongo-utils.sh --shell-version latest --tools-version latest`
-- Update vcpkg `bash etc/scripts/install-vcpkg.sh [--tag <tag>]`
+- Update vcpkg `./macos/<hostname>/bootstrap-04-vcpkg.sh`
 - Update Homebrew's apps.
   - Quit all apps.
   - Unlock apps: `bash etc/macos/scripts/toggle-application-lock.sh`
@@ -32,9 +32,7 @@ applicable to previous versions too.
   - Unlink specific formulae: `brew unlink python@3.14 openssl@3`
   - Purge the cache: `brew cleanup [--dry-run]`
 - Update other apps.
-  - Update Azahar `bash etc/macos/scripts/install-azahar.sh [--version <ver>]`
-  - Update MelonDS `bash etc/macos/scripts/install-melonds.sh [--version <ver>]`
-  - Update SkyEmu `bash etc/macos/scripts/install-skyemu.sh [--version <ver>]`
+  - Update emulators: `./macos/<hostname>/bootstrap-05-emulators.sh`
 - Update Mise plugins and tools
   - Update all plugins: `mise plugins upgrade`
   - Update all tools: `mise upgrade`
