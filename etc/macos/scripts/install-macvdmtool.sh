@@ -6,7 +6,7 @@
 # This scripts builds and installs AsahiLinux/macvdmtool.
 #
 # Pre-conditions:
-# `git`, `make` and `cc` need to be available to clone and build macvdmtool's repo.
+# `git`, `make` and `cc` need to be available to clone and build macvdmtool.
 #
 # The following switch are available:
 # -v: Print major commands being executed.
@@ -46,7 +46,7 @@ check_preconds () {
 	logi "Checking pre-conditions ..."
 
 	if ! which -s git; then
-		loge "\`git\` was not found but it's to clone macvdm's repo."
+		loge "\`git\` was not found but it's required to clone macvdm's repo."
 		exit 1
 	fi
 
@@ -70,7 +70,7 @@ install_macvdm () {
 	logi "Cloning macvdmtool repo from $macvdm_git_dir/macvdmtool ..."
 	run git clone "https://github.com/$MACVDM_REPO" "$macvdm_git_dir/macvdmtool"
 
-	logi "Building and then installing macvdmtool in $macvdm_bin_dir/macvdmtool ..."
+	logi "Building and installing macvdmtool in $macvdm_bin_dir/macvdmtool ..."
 	run pushd "$macvdm_git_dir/macvdmtool"
 	run make
 	run mv macvdmtool "$macvdm_bin_dir/macvdmtool"
@@ -82,7 +82,7 @@ update_macvdm () {
 	run git -C "$macvdm_git_dir/macvdmtool" clean -fddx
 	run git -C "$macvdm_git_dir/macvdmtool" pull --prune
 
-	logi "Building and then installing macvdmtool in $macvdm_bin_dir/macvdmtool ..."
+	logi "Building and installing macvdmtool in $macvdm_bin_dir/macvdmtool ..."
 	run pushd "$macvdm_git_dir/macvdmtool"
 	run make
 	run mv macvdmtool "$macvdm_bin_dir/macvdmtool"
@@ -92,7 +92,10 @@ update_macvdm () {
 trap 'cleanup' EXIT
 parse_input_args "$@"
 check_preconds
-if [[ $(run git -C "$macvdm_git_dir/macvdmtool" rev-parse --is-inside-work-tree) == "true" ]]; then
+if [[
+	-d "$macvdm_git_dir/macvmd" &&
+	$(run git -C "$macvdm_git_dir/macvdmtool" rev-parse --is-inside-work-tree) == "true"
+]]; then
 	update_macvdm
 else
 	install_macvdm
