@@ -67,6 +67,7 @@ disable_user_services () {
 		com.apple.diagnosticextensionsd
 		com.apple.diagnostics_agent
 		com.apple.DiagnosticsReporter
+		com.apple.duetexpertd
 		com.apple.email.maild
 		# com.apple.ensemble
 		com.apple.familycircled
