@@ -9,7 +9,7 @@ readonly ROOT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 readonly SETUP_SCRIPTS=(
 	"$SCRIPT_DIR"/configure.sh
 	"$SCRIPT_DIR"/bootstrap-01-defaults.sh
-	"$SCRIPT_DIR"/bootstrap-01-rosetta.sh
+	"$SCRIPT_DIR"/bootstrap-01-rosetta.sh # Likely not necessary on macOS 27
 	"$SCRIPT_DIR"/bootstrap-02-brew.sh
 	"$SCRIPT_DIR"/bootstrap-02-brew-formulae.sh
 	"$SCRIPT_DIR"/bootstrap-02-brew-casks.sh
