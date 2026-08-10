@@ -1,0 +1,8 @@
+{
+	"bitrate": 4059,
+	"limit_bitrate": true,
+	"max_bitrate": 7578,
+	"max_bitrate_window": 10.0,
+	"keyint_sec": 20,
+	"profile": "baseline"
+}
