@@ -16,7 +16,7 @@ readonly RAM_SIZE=$(sysctl -n hw.memsize)
 echo -e "Designation: $CPU_BRAND";
 echo -e "Memory size: $((RAM_SIZE / 1024 / 1024 / 1024))GiB";
 echo -e "# CPU cores: $NUM_PHYSICAL_CPUS";
-echo -e "# GPU cores: $NUM_GPU_CORES";
+echo -e "# GPU cores: ${NUM_GPU_CORES:-Unknown / Not Applicable}";
 
 for ((i=0; i<NUM_PERF_LEVELS; i++))
 do
@@ -33,5 +33,9 @@ do
 	echo -e "# CPU cores / cluster:\t$perf_level_cpu_cluster_size"
 	echo -e "L1I\$ per CPU core:\t$((perf_level_cpu_l1icache_size / 1024))KiB"
 	echo -e "L1D\$ per CPU core:\t$((perf_level_cpu_l1dcache_size / 1024))KiB"
-	echo -e "L2\$ per CPU cluster:\t$((perf_level_cpu_l2cache_size / 1024 / 1024))MiB"
+	if [[ $perf_level_cpu_l2cache_size -ge $((1024 * 1024)) ]]; then
+		echo -e "L2\$ per CPU cluster:\t$((perf_level_cpu_l2cache_size / 1024 /1024 ))MiB"
+	else
+		echo -e "L2\$ per CPU cluster:\t$((perf_level_cpu_l2cache_size / 1024 ))KiB"
+	fi
 done
