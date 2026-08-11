@@ -27,15 +27,15 @@ do
 	perf_level_cpu_l2cache_size=$(sysctl -n "hw.perflevel$i.l2cachesize")
 	perf_level_cpu_cluster_size=$(sysctl -n "hw.perflevel$i.cpusperl2")
 
-	echo -e "\n--- $perf_level cores ---"
+	echo -e "\n--- $perf_level group ---"
 	echo -e "# CPU cores:\t\t$perf_level_num_cpus"
 	echo -e "# CPU clusters:\t\t$((perf_level_num_cpus / perf_level_cpu_cluster_size))"
-	echo -e "# CPU cores / cluster:\t$perf_level_cpu_cluster_size"
-	echo -e "L1I\$ per CPU core:\t$((perf_level_cpu_l1icache_size / 1024))KiB"
-	echo -e "L1D\$ per CPU core:\t$((perf_level_cpu_l1dcache_size / 1024))KiB"
+	echo -e "# Cores / Cluster:\t$perf_level_cpu_cluster_size"
+	echo -e "L1I\$ per core:\t\t$((perf_level_cpu_l1icache_size / 1024))KiB"
+	echo -e "L1D\$ per core:\t\t$((perf_level_cpu_l1dcache_size / 1024))KiB"
 	if [[ $perf_level_cpu_l2cache_size -ge $((1024 * 1024)) ]]; then
-		echo -e "L2\$ per CPU cluster:\t$((perf_level_cpu_l2cache_size / 1024 /1024 ))MiB"
+		echo -e "L2\$ per cluster:\t$((perf_level_cpu_l2cache_size / 1024 /1024 ))MiB"
 	else
-		echo -e "L2\$ per CPU cluster:\t$((perf_level_cpu_l2cache_size / 1024 ))KiB"
+		echo -e "L2\$ per cluster:\t$((perf_level_cpu_l2cache_size / 1024 ))KiB"
 	fi
 done
