@@ -1,0 +1,9 @@
+{
+	"basher": true,
+	"fish": true,
+	"ini": true,
+	"lua": true,
+	"toml": true,
+	"typst": true,
+	"vscode-dark-modern": true
+}
