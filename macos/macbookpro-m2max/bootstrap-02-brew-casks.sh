@@ -6,8 +6,8 @@ set -Eeuo pipefail
 readonly HOMEBREW_CASKS=(
 	alt-tab betterdisplay brave-browser bruno coconutbattery dbeaver-community
 	font-jetbrains-mono-nerd-font fork geekbench ghostty iina keyboardcleantool
-	mac-mouse-fix obs signal spotify transmission utm visual-studio-code
-	visualdiffer zed
+	mac-mouse-fix obs spotify transmission utm visual-studio-code visualdiffer
+	zed
 )
 readonly SCRIPT_DIR="$(cd "$(dirname -- "${BASH_SOURCE[0]}")" >/dev/null && pwd)"
 readonly ROOT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
