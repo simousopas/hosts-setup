@@ -25,7 +25,7 @@ run mkdir -p "$XDG_CONFIG_HOME"/{bat/themes,fd,fish/completions}
 run mkdir -p "$XDG_CONFIG_HOME"/{ghostty,git,lf,lima}
 run mkdir -p "$XDG_CONFIG_HOME"/{mise,nvim,pip,rg,zed}
 run mkdir -p "$CODE"/{github,simousopas}
-run mkdir -p "$DOCUMENTS"/{Captures,Misc,Remote}
-run mkdir -p "$DOWNLOADS"/{Brave,Misc,Safari,Torrents,UTM}
+run mkdir -p "$DOCUMENTS"/{Captures,Misc,Remote,UTM}
+run mkdir -p "$DOWNLOADS"/{Brave,Misc,Safari,Torrents}
 run ln -fhs "$XDG_CACHE_HOME/container" "$HOME/Library/Application Support/com.apple.container"
 run ln -fhs "$XDG_CACHE_HOME/lima" "$HOME/Library/Caches/lima"
