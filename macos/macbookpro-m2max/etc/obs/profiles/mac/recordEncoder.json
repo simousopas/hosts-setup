@@ -1,0 +1,8 @@
+{
+	"rate_control": "ABR",
+	"bitrate": 4920,
+	"limit_bitrate": true,
+	"max_bitrate": 8343,
+	"max_bitrate_window": 10.0,
+	"keyint_sec": 20
+}

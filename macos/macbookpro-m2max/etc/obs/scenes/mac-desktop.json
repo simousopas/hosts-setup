@@ -1,0 +1,348 @@
+{
+	"name": "Mac / Desktop",
+	"AuxAudioDevice1": {
+		"prev_ver": 537001985,
+		"name": "Mic/Aux",
+		"uuid": "4e339e23-3567-4bf1-8082-9799d6de7e2a",
+		"id": "coreaudio_input_capture",
+		"versioned_id": "coreaudio_input_capture",
+		"settings": {
+			"device_id": "default"
+		},
+		"mixers": 255,
+		"sync": 0,
+		"flags": 0,
+		"volume": 1.0,
+		"balance": 0.5,
+		"enabled": true,
+		"muted": false,
+		"push-to-mute": false,
+		"push-to-mute-delay": 0,
+		"push-to-talk": false,
+		"push-to-talk-delay": 0,
+		"hotkeys": {
+			"libobs.mute": [],
+			"libobs.unmute": [],
+			"libobs.push-to-mute": [],
+			"libobs.push-to-talk": []
+		},
+		"deinterlace_mode": 0,
+		"deinterlace_field_order": 0,
+		"monitoring_type": 0,
+		"private_settings": {}
+	},
+	"sources": [
+		{
+			"prev_ver": 537001985,
+			"name": "Screen",
+			"uuid": "55cd539e-d496-4804-ae18-a692d6911399",
+			"id": "screen_capture",
+			"versioned_id": "screen_capture",
+			"settings": {
+				"display_uuid": "37D8832A-2D66-02CA-B9F7-8F30A301B230"
+			},
+			"mixers": 255,
+			"sync": 0,
+			"flags": 0,
+			"volume": 1.0,
+			"balance": 0.5,
+			"enabled": true,
+			"muted": false,
+			"push-to-mute": false,
+			"push-to-mute-delay": 0,
+			"push-to-talk": false,
+			"push-to-talk-delay": 0,
+			"hotkeys": {
+				"libobs.mute": [],
+				"libobs.unmute": [],
+				"libobs.push-to-mute": [],
+				"libobs.push-to-talk": []
+			},
+			"deinterlace_mode": 0,
+			"deinterlace_field_order": 0,
+			"monitoring_type": 0,
+			"private_settings": {}
+		},
+		{
+			"prev_ver": 537001985,
+			"name": "Camera / FaceTime HD",
+			"uuid": "81eda64e-8381-4133-a9dd-1cd12d370b76",
+			"id": "macos-avcapture",
+			"versioned_id": "macos-avcapture",
+			"settings": {
+				"device_name": "FaceTime HD Camera",
+				"device": "3F45E80A-0176-46F7-B185-BB9E2C0E82E3",
+				"preset": "AVCaptureSessionPreset352x288"
+			},
+			"mixers": 255,
+			"sync": 0,
+			"flags": 0,
+			"volume": 1.0,
+			"balance": 0.5,
+			"enabled": true,
+			"muted": false,
+			"push-to-mute": false,
+			"push-to-mute-delay": 0,
+			"push-to-talk": false,
+			"push-to-talk-delay": 0,
+			"hotkeys": {
+				"libobs.mute": [],
+				"libobs.unmute": [],
+				"libobs.push-to-mute": [],
+				"libobs.push-to-talk": []
+			},
+			"deinterlace_mode": 0,
+			"deinterlace_field_order": 0,
+			"monitoring_type": 0,
+			"private_settings": {},
+			"filters": [
+				{
+					"prev_ver": 537001985,
+					"name": "Image Mask/Blend",
+					"uuid": "6745ea53-b295-4ae0-8058-9b9e12760f93",
+					"id": "mask_filter",
+					"versioned_id": "mask_filter_v2",
+					"settings": {
+						"image_path": "/Users/fm/Documents/Misc/obs-mask.png"
+					},
+					"mixers": 0,
+					"sync": 0,
+					"flags": 0,
+					"volume": 1.0,
+					"balance": 0.5,
+					"enabled": true,
+					"muted": false,
+					"push-to-mute": false,
+					"push-to-mute-delay": 0,
+					"push-to-talk": false,
+					"push-to-talk-delay": 0,
+					"hotkeys": {},
+					"deinterlace_mode": 0,
+					"deinterlace_field_order": 0,
+					"monitoring_type": 0,
+					"private_settings": {}
+				}
+			]
+		},
+		{
+			"prev_ver": 537001985,
+			"name": "Desktop",
+			"uuid": "d7cf2794-bf26-4e8a-a58d-a145d2a8e952",
+			"id": "scene",
+			"versioned_id": "scene",
+			"settings": {
+				"id_counter": 2,
+				"custom_size": false,
+				"items": [
+					{
+						"name": "Screen",
+						"source_uuid": "55cd539e-d496-4804-ae18-a692d6911399",
+						"visible": true,
+						"locked": true,
+						"rot": 0.0,
+						"scale_ref": {
+							"x": 3456.0,
+							"y": 2234.0
+						},
+						"align": 5,
+						"bounds_type": 0,
+						"bounds_align": 0,
+						"bounds_crop": false,
+						"crop_left": 0,
+						"crop_top": 0,
+						"crop_right": 0,
+						"crop_bottom": 0,
+						"id": 1,
+						"group_item_backup": false,
+						"pos": {
+							"x": 0.0,
+							"y": 0.0
+						},
+						"pos_rel": {
+							"x": -1.5470008850097656,
+							"y": -1.0
+						},
+						"scale": {
+							"x": 1.0,
+							"y": 1.0
+						},
+						"scale_rel": {
+							"x": 1.0,
+							"y": 1.0
+						},
+						"bounds": {
+							"x": 0.0,
+							"y": 0.0
+						},
+						"bounds_rel": {
+							"x": 0.0,
+							"y": 0.0
+						},
+						"scale_filter": "disable",
+						"blend_method": "default",
+						"blend_type": "normal",
+						"show_transition": {
+							"duration": 300
+						},
+						"hide_transition": {
+							"duration": 300
+						},
+						"private_settings": {}
+					},
+					{
+						"name": "Camera / FaceTime HD",
+						"source_uuid": "81eda64e-8381-4133-a9dd-1cd12d370b76",
+						"visible": true,
+						"locked": true,
+						"rot": 0.0,
+						"scale_ref": {
+							"x": 3456.0,
+							"y": 2234.0
+						},
+						"align": 5,
+						"bounds_type": 0,
+						"bounds_align": 0,
+						"bounds_crop": false,
+						"crop_left": 0,
+						"crop_top": 0,
+						"crop_right": 0,
+						"crop_bottom": 0,
+						"id": 2,
+						"group_item_backup": false,
+						"pos": {
+							"x": 3456.0,
+							"y": 1946.0
+						},
+						"pos_rel": {
+							"x": 1.5470008850097656,
+							"y": 0.7421665191650391
+						},
+						"scale": {
+							"x": -1.0,
+							"y": 1.0
+						},
+						"scale_rel": {
+							"x": -1.0,
+							"y": 1.0
+						},
+						"bounds": {
+							"x": 0.0,
+							"y": 0.0
+						},
+						"bounds_rel": {
+							"x": 0.0,
+							"y": 0.0
+						},
+						"scale_filter": "disable",
+						"blend_method": "default",
+						"blend_type": "normal",
+						"show_transition": {
+							"id": "fade_transition",
+							"versioned_id": "fade_transition",
+							"name": "Video Capture Device Show Transition",
+							"transition": {},
+							"duration": 300
+						},
+						"hide_transition": {
+							"id": "fade_transition",
+							"versioned_id": "fade_transition",
+							"name": "Video Capture Device Hide Transition",
+							"transition": {},
+							"duration": 300
+						},
+						"private_settings": {}
+					}
+				]
+			},
+			"mixers": 0,
+			"sync": 0,
+			"flags": 0,
+			"volume": 1.0,
+			"balance": 0.5,
+			"enabled": true,
+			"muted": false,
+			"push-to-mute": false,
+			"push-to-mute-delay": 0,
+			"push-to-talk": false,
+			"push-to-talk-delay": 0,
+			"hotkeys": {
+				"OBSBasic.SelectScene": [],
+				"libobs.show_scene_item.1": [],
+				"libobs.hide_scene_item.1": [],
+				"libobs.show_scene_item.2": [],
+				"libobs.hide_scene_item.2": []
+			},
+			"deinterlace_mode": 0,
+			"deinterlace_field_order": 0,
+			"monitoring_type": 0,
+			"canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
+			"private_settings": {}
+		}
+	],
+	"groups": [],
+	"scene_order": [
+		{
+			"name": "Desktop"
+		}
+	],
+	"current_scene": "Desktop",
+	"current_program_scene": "Desktop",
+	"canvases": [],
+	"current_transition": "Fade",
+	"transition_duration": 300,
+	"transitions": [],
+	"quick_transitions": [
+		{
+			"name": "Cut",
+			"duration": 300,
+			"hotkeys": [],
+			"id": 1,
+			"fade_to_black": false
+		},
+		{
+			"name": "Fade",
+			"duration": 300,
+			"hotkeys": [],
+			"id": 2,
+			"fade_to_black": false
+		},
+		{
+			"name": "Fade",
+			"duration": 300,
+			"hotkeys": [],
+			"id": 3,
+			"fade_to_black": true
+		}
+	],
+	"saved_projectors": [],
+	"preview_locked": false,
+	"scaling_enabled": false,
+	"scaling_level": -16,
+	"scaling_off_x": 0.0,
+	"scaling_off_y": 0.0,
+	"virtual-camera": {
+		"type2": 3
+	},
+	"modules": {
+		"scripts-tool": [],
+		"output-timer": {
+			"streamTimerHours": 0,
+			"streamTimerMinutes": 0,
+			"streamTimerSeconds": 30,
+			"recordTimerHours": 0,
+			"recordTimerMinutes": 0,
+			"recordTimerSeconds": 30,
+			"autoStartStreamTimer": false,
+			"autoStartRecordTimer": false,
+			"pauseRecordTimer": true
+		},
+		"auto-scene-switcher": {
+			"interval": 300,
+			"non_matching_scene": "",
+			"switch_if_not_matching": false,
+			"active": false,
+			"switches": []
+		}
+	},
+	"version": 2
+}
