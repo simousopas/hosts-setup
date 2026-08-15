@@ -65,14 +65,14 @@
 		},
 		{
 			"prev_ver": 537001985,
-			"name": "Video Capture Device",
+			"name": "Camera / Logitech C920",
 			"uuid": "dc638905-865d-474c-ba86-5665f202fef5",
 			"id": "macos-avcapture",
 			"versioned_id": "macos-avcapture",
 			"settings": {
-				"device": "0x131140046d082d",
 				"device_name": "HD Pro Webcam C920",
-				"preset": "AVCaptureSessionPreset640x480"
+				"preset": "AVCaptureSessionPreset640x480",
+				"device": "0x2131140046d082d"
 			},
 			"mixers": 255,
 			"sync": 0,
@@ -190,10 +190,10 @@
 						"private_settings": {}
 					},
 					{
-						"name": "Video Capture Device",
+						"name": "Camera / Logitech C920",
 						"source_uuid": "dc638905-865d-474c-ba86-5665f202fef5",
 						"visible": true,
-						"locked": false,
+						"locked": true,
 						"rot": 0.0,
 						"scale_ref": {
 							"x": 3840.0,
@@ -317,7 +317,7 @@
 	"saved_projectors": [],
 	"preview_locked": false,
 	"scaling_enabled": false,
-	"scaling_level": -17,
+	"scaling_level": -18,
 	"scaling_off_x": 0.0,
 	"scaling_off_y": 0.0,
 	"virtual-camera": {
