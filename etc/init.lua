@@ -40,6 +40,7 @@ vim.opt.shortmess:append("cI")                  -- Disable messages from complet
 vim.opt.showbreak = "↳ "                        -- Representation of line break due to wrap.
 vim.opt.smartcase = true                        -- Turn on case-sensitive search when capital letters are used.
 vim.opt.spell = false                           -- Spellchecker disabled by default.
+vim.opt.spellsuggest = { "best", 9 }            -- Only suggest this top-N fixes.
 vim.opt.splitbelow = true                       -- Horizontal split goes bellow the current window.
 vim.opt.splitright = true                       -- Vertical split goes to the right of the current window.
 vim.opt.swapfile = false                        -- Disable swap file creation.
