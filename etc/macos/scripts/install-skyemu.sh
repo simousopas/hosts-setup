@@ -60,7 +60,7 @@ check_preconds () {
 
 uninstall_skyemu () {
 	logi "Uninstalling SkyEmu ..."
-	run rm -rf "/$skyemu_install_dir/SkyEmu.app"
+	run rm -rf "$skyemu_install_dir/SkyEmu.app"
 	run rm -rf "$HOME/Library/Application Support/Sky/SkyEmu"
 }
 
