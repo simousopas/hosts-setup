@@ -90,7 +90,7 @@ install_azahar () {
 
 	logi "Installing Azahar at $azahar_install_dir/Azahar.app ..."
 	run rm -rf "$azahar_install_dir/Azahar.app"
-	run mv "$AZAHAR_DOWNLOAD_DIR/azahar-macos-${CPU_ARCH}-${version}/Azahar.app" "$azahar_install_dir/"
+	run ditto "$AZAHAR_DOWNLOAD_DIR/azahar-macos-${CPU_ARCH}-${version}/Azahar.app" "$azahar_install_dir/Azahar.app"
 }
 
 trap 'cleanup' EXIT

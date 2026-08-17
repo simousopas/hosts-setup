@@ -88,7 +88,7 @@ install_skyemu () {
 	logi "Installing SkyEmu at $skyemu_install_dir/SkyEmu.app ..."
 	run hdiutil attach -nobrowse -readonly "${SKYEMU_DOWNLOAD_DIR}/SkyEmu.dmg"
 	run rm -rf "$skyemu_install_dir/SkyEmu.app"
-	run cp -R "/Volumes/SkyEmu/SkyEmu.app" "$skyemu_install_dir/"
+	run ditto -R "/Volumes/SkyEmu/SkyEmu.app" "$skyemu_install_dir/SkyEmu.app"
 }
 
 trap 'cleanup' EXIT

@@ -89,7 +89,7 @@ install_melonds () {
 
 	logi "Installing melonDS at $melonds_install_dir/melonDS.app ..."
 	run rm -rf "$melonds_install_dir/melonDS.app"
-	run mv "$MELONDS_DOWNLOAD_DIR/melonDS.app" "$melonds_install_dir/"
+	run ditto "$MELONDS_DOWNLOAD_DIR/melonDS.app" "$melonds_install_dir/melonDS.app"
 }
 
 trap 'cleanup' EXIT
