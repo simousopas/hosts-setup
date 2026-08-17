@@ -30,7 +30,7 @@ version=""
 source "$ROOT_DIR/etc/scripts/utils.sh"
 
 cleanup () {
-	run umount "/Volumes/SkyEmu" || true
+	run hdiutil detach "/Volumes/SkyEmu" || true
 	run rm -rf "$SKYEMU_DOWNLOAD_DIR"
 }
 
@@ -86,7 +86,7 @@ install_skyemu () {
 		"https://github.com/${SKYEMU_REPO}/releases/download/${version}/SkyEmu-${version}-macOS.dmg"
 
 	logi "Installing SkyEmu at $skyemu_install_dir/SkyEmu.app ..."
-	run hdiutil attach "${SKYEMU_DOWNLOAD_DIR}/SkyEmu.dmg"
+	run hdiutil attach -nobrowse -readonly "${SKYEMU_DOWNLOAD_DIR}/SkyEmu.dmg"
 	run rm -rf "$skyemu_install_dir/SkyEmu.app"
 	run cp -R "/Volumes/SkyEmu/SkyEmu.app" "$skyemu_install_dir/"
 }
