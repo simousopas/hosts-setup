@@ -13,4 +13,4 @@ source "$ROOT_DIR/etc/scripts/utils.sh"
 validate_host
 
 /bin/bash "$ROOT_DIR/etc/scripts/install-hosts.sh" \
-	--with-sb-hosts-variant fakenews-gambling-porn
+	--with-sb-hosts-variant unified
