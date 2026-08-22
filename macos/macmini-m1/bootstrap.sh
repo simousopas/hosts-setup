@@ -23,6 +23,7 @@ readonly SETUP_SCRIPTS=(
 	"$SCRIPT_DIR"/bootstrap-04-mise.sh
 	"$SCRIPT_DIR"/bootstrap-04-ismc.sh
 	"$SCRIPT_DIR"/bootstrap-04-vcpkg.sh
+	"$SCRIPT_DIR"/bootstrap-04-nmap.sh
 	"$SCRIPT_DIR"/bootstrap-04-vscode.sh
 	"$SCRIPT_DIR"/bootstrap-05-env.sh
 	"$SCRIPT_DIR"/bootstrap-05-emulators.sh

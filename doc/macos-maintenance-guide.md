@@ -21,6 +21,7 @@ applicable to previous versions too.
 - Update iSMC `./macos/<hostname>/bootstrap-04-ismc.sh`
 - Update MongoDB Shell/Tools
   `bash etc/scripts/install-mongo-utils.sh --shell-version latest --tools-version latest`
+- Update nmap `./macos/<hostname>/bootstrap-04-nmap.sh`
 - Update vcpkg `./macos/<hostname>/bootstrap-04-vcpkg.sh`
 - Update Homebrew's apps.
   - Quit all apps.
